@@ -1,0 +1,223 @@
+body,html{
+    margin: 0;
+}
+
+a{
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav {
+    position: sticky;
+    height: 50px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px 0;
+    animation: 1s fadein 0.5s forwards;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(74,55,55);
+}
+
+.form-track{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 45vh;
+    margin-left: 50px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+    border-radius: 7px;
+}
+
+#form-title{
+    margin-top: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.bg-img{
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#id{
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #a4d9ff;
+}
+
+#track-btn{
+    border: none;
+    text-decoration: none;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: rgb(74,55,55);
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.title{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: -15px;
+  text-decoration: none;
+  color: white;
+  width: 250px;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: -15px;
+    padding-top: 0;
+    margin-top: -10px;
+    margin-bottom: 14px;
+  }
+
+.item{
+    display: flex;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.about-section{
+    margin-top: 50px;
+}
+
+/*
+The tracking route
+*/
+
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+} */
+
+body {
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  margin: 2rem auto;
+}
+
+h2, h4, h6 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.root {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+figure {
+  display: flex;
+}
+figure img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15%;
+  border: 1.5px solid #f05a00;
+  margin-right: 1.5rem;
+  padding: 1rem;
+}
+figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+figure figcaption h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+figure figcaption h6 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+figure figcaption h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.order-track {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  border-top: 1px dashed #2c3e50;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.order-track-step {
+  display: flex;
+  height: 7rem;
+}
+.order-track-step:last-child {
+  overflow: hidden;
+  height: 4rem;
+}
+.order-track-step:last-child .order-track-status span:last-of-type {
+  display: none;
+}
+.order-track-status {
+  margin-right: 1.5rem;
+  position: relative;
+}
+.order-track-status-dot {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #f05a00;
+}
+.order-track-status-line {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 7rem;
+  background: #f05a00;
+}
+.order-track-text-stat {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.order-track-text-sub {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.order-track {
+  transition: all .3s height 0.3s;
+  transform-origin: top center;
+}
